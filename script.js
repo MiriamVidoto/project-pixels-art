@@ -36,13 +36,6 @@ function createBoard(size) {
 }
 createBoard(10);
 
-// inventando pen
-function pen() {
-  for (let pix of pixels)
-  pix.addEventListener('click', insertColor);
-}
-document.getElementById('pen').addEventListener('click', pen);
-
 // inventando pencil
 function pencil() {
   for (let pixel of pixels)
