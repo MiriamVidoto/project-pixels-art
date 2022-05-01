@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Art Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="title">Pixels Art</h1>
+    </header>
+    <main>
+        <section>
+            <p>Aqui você é artista! Dirvirta-se desenhando com pixels.</p>
+            <p>Você pode escolher o tamanho do seu quadro:</p>
+            <p><small>* o tamanho mínimo é 5 e o máximo é 50 </small></p>
+            <input type="number" max="50" min="5" name="board-size" id="board-size">
+            <input type="button" class="button" value="Criar Board" id="generate-board">
+        </section>
+        <section>
+            <p>Depois é só escolher a cor e começar a desenhar!</p>
+                <p>E sempre que quiser pode limpar e começar tudo de novo.</p>
+        </section>
+        <section id="color-palette">
+            <div class="color selected"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </section>
+        <section>
+            <input type="button" class="button"  value="Novas Cores" id="new-colors"> <input type="button" class="button"  value="🖌️" id="pencil"> 
+            <input type="button" class="button"  value="➖" id="stop"> 
+            <input type="button" class="button"  value="✒️" id="pen"> 
+            <input type="button" class="button"  value="Limpar" id="clear-board"> 
+        </section>
+        <section id="pixel-board">
+        </section>
+    </main>
+    <footer>
+        <p>&copy; Miriam Vidoto <small>2022</small></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
